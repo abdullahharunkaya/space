@@ -24,7 +24,6 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBarWidget(context: context, title: 'SpaceX'),
       body: BlocBuilder<HomeCubit, HomeState>(
         /// BlocBuilder will listen to changes in the state and
         /// rebuild the UI with the new data.

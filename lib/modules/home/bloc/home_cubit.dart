@@ -41,7 +41,6 @@ class HomeCubit extends Cubit<HomeState> {
     }
     switch (response.statusCode) {
       case 200:
-        print(response.body);
         var map = jsonDecode(response.body);
         lastDuty = LastDuty.fromJson(map);
         emit(HomeLoaded());
