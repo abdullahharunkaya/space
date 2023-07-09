@@ -38,3 +38,6 @@ program.
 5. **model** : This is the model class which contains the model for the spaceX launch program.
 6. **widgets** : This is the widget class which contains the widget for the spaceX launch program.
 
+Widget Tree
+
+![img.png](img.png)
