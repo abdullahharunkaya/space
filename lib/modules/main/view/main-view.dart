@@ -33,8 +33,6 @@ class MainView extends StatelessWidget {
     ///SplashState and HomeState
     if (state is SplashState) return const SplashView();
     if (state is HomeState) return const HomeView();
-    return const Center(
-      child: Text('Error'),
-    );
+    return const Center(child: Text('Error'));
   }
 }

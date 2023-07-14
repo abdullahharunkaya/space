@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../bloc/home_cubit.dart';
-import '../utils/custom-box-decoration.dart';
 import '../utils/time-converter.dart';
 import 'custom-app-bar.dart';
 import 'item-widget.dart';
@@ -55,56 +55,14 @@ class _LoadedWidgetState extends State<LoadedWidget> {
                   ? 'Success'
                   : 'Failed',
             ),
-            Divider(
-              color: Colors.red.withOpacity(0.5),
-              height: 10.0,
-            ),
-            const SizedBox(
-              height: 10.0,
-            ),
-            ItemWidget(
-              title: "Mission Name",
-              subtitle: context.watch<HomeCubit>().lastDuty!.name ?? 'No Name',
-            ),
-            ItemWidget(
-              title: "Launch Date",
-              subtitle: TimeConverter.timeUntil(
-                  context.watch<HomeCubit>().lastDuty!.dateLocal!),
-            ),
-            ItemWidget(
-              title: 'Flight Number',
-              subtitle:
-                  context.watch<HomeCubit>().lastDuty!.flightNumber.toString(),
-            ),
-            ItemWidget(
-              title: 'Details',
-              subtitle:
-                  context.watch<HomeCubit>().lastDuty!.details ?? 'No Details',
-            ),
-            ItemWidget(
-              title: 'Success',
-              subtitle: context.watch<HomeCubit>().lastDuty!.success ?? false
-                  ? 'Success'
-                  : 'Failed',
-            ),
+
+
+            SizedBox(height: Adaptive.h(100)),
+
+
           ]),
         ),
       ],
-    );
-    return Container(
-      decoration: CustomBoxDecoration.homeBackgroundDecoration(
-        context.watch<HomeCubit>().lastDuty!.links!.patch!.large ?? '',
-        context.watch<HomeCubit>().lastDuty!.success ?? false,
-      ),
-      child: Column(
-        children: [
-          Expanded(
-            child: ListView(
-              children: [],
-            ),
-          ),
-        ],
-      ),
     );
   }
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:space/modules/home/bloc/home_cubit.dart';
-import 'package:space/modules/home/widgets/custom-app-bar.dart';
 import 'package:space/modules/home/widgets/error-widget.dart';
 import 'package:space/modules/home/widgets/loaded-widget.dart';
 import 'package:space/modules/home/widgets/loading-widget.dart';

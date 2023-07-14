@@ -10,7 +10,7 @@ class CustomAppBarWidget extends SliverAppBar {
           key: key,
           expandedHeight: Adaptive.h(30.0),
           floating: false,
-          pinned: false,
+          pinned: true,
           //snap: true,
           flexibleSpace: FlexibleSpaceBar(
             title: Text(

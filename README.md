@@ -29,14 +29,13 @@ This module contains the splash screen and the splash screen view.
 
 Home
 This module contains the home screen and the home screen view, service , repo, model and widgets.
-1. **home screen** : This is the home screen which contains the list of the spaceX launch program.
-2. **home screen view** : This is the view of the home screen which contains the list of the spaceX
-launch program.
-3. **service** : This is the service class which contains the api call for the spaceX launch
-program.
-4. **repo** : This is the repo class which contains the api call for the spaceX launch program.
-5. **model** : This is the model class which contains the model for the spaceX launch program.
-6. **widgets** : This is the widget class which contains the widget for the spaceX launch program.
+1. **BLOC** : This module contains bloc which is used to handle the business logic.
+2. **MODEL** : This module contains the model which is used to handle the data.
+3. **REPO** : This module contains the repo which is used to handle the data from the service.
+4. **SERVICE** : This module contains the service which is used to handle the data from the api.
+5. **WIDGETS** : This module contains the widgets which is used to handle the UI.
+6. **VIEW** : This module contains the view which is used to handle the UI.
+7. **UTILS** : This module contains the utils which is used to handle the common function.
 
 Widget Tree
 
